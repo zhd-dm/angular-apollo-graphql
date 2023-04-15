@@ -25,7 +25,7 @@ module.exports = {
                     {
                         selector: 'function',
                         modifiers: ['exported'],
-                        format: ['PascalCase'],
+                        format: ['camelCase'],
                     },
                     {
                         selector: 'interface',

@@ -24,7 +24,7 @@ module.exports = {
                 '@typescript-eslint/no-extra-non-null-assertion': 'error',
                 '@typescript-eslint/no-unnecessary-type-arguments': 'error',
                 '@typescript-eslint/type-annotation-spacing': 'error',
-                '@typescript-eslint/quotes': ['error', 'backtick'],
+                '@typescript-eslint/quotes': ['error', 'single', { 'avoidEscape': true }],
                 '@typescript-eslint/member-delimiter-style': 'error',
                 '@typescript-eslint/func-call-spacing': 'error',
                 '@typescript-eslint/no-useless-constructor': 'error',
