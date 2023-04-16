@@ -19,6 +19,24 @@ const config: CodegenConfig = {
                 strictScalars: true,
             },
         },
+        'libs/graphql/services': {
+            documents: ['**/*.graphql'],
+            preset: 'near-operation-file',
+            presetConfig: {
+                extension: '.generated.ts',
+                baseTypesPath: 'libs/graphql',
+                importTypesNamespace: 'SchemaTypes',
+            },
+            plugins: ['typescript-operations', 'typescript-apollo-angular'],
+            config: {
+                // namedClient: GQL_GATEWAY_SERVICE,
+                avoidOptionals: true,
+                addExplicitOverride: true,
+                sdkClass: true,
+                serviceName: 'GqlSdkService',
+                scalars,
+            },
+        },
     },
 };
 export default config;

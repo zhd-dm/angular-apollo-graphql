@@ -1,6 +1,8 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 
+import {HomeComponent} from './home/home.component';
+
 const routes: Routes = [
     {
         path: '',
@@ -9,8 +11,7 @@ const routes: Routes = [
     },
     {
         path: 'home',
-        loadComponent: async () =>
-            import('./home/home.component').then(c => c.HomeComponent),
+        component: HomeComponent,
     },
     {
         path: '**',
