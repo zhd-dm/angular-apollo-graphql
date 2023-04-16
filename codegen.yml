@@ -1,0 +1,2 @@
+schema: URL
+documents: 'libs/graphql/**/*.{graphql}'
