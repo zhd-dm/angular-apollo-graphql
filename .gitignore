@@ -44,3 +44,4 @@ Thumbs.db
 
 # GraphQL generated
 *.generated.**
+graphql-schema.json
