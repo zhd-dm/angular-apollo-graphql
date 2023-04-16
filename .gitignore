@@ -43,5 +43,5 @@ testem.log
 Thumbs.db
 
 # GraphQL generated
-*.generated.**
+*graphql-types.generated.ts
 *graphql-schema.json
